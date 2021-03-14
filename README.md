@@ -42,10 +42,18 @@ retrieving binary output, like whether a charity was successful or not.
 
 Unfortunately, I was unable to increase the model's accuracy higher than 73%.
 
+Alphabet Soup Charity Accuracy:
+<img src= "images/ASCharity_acc.png"></img>
+
+
+Alphabet Soup Charity Optimized Model:
+<img src= "images/AC_Optimized.png"></img>
+
+
 ### What steps did you take to try and increase model performance?
 
 The steps taken to try to increase the models performance are:
--  To bin the ASK_AMT feature down to two options, 5000 or Other. 5000 was the minimum, median and mode for the ASK_AMT feature, with over 25000 incidences of a $5000 request. Any request for more than $5000 was binned together as they were are rare occurances.
+-  To bin the ASK_AMT feature down to two options, 5000 or Other. 5000 was the minimum, median and mode for the ASK_AMT feature, with over 25000 incidences of a $5000 request. Any request for more than $5000 was binned together as they were are rare occurrences.
 
 - In my optimized model, I selected 3 hidden layers. The first layer contains 123 nodes(3x the amount of features), the second and third layers contain 246 nodes in an attempt to increase the model's performance. The activation functions for the hidden layers are ReLu. The outer layer uses a Sigmoid activation. Switching to a Softmax or Tanh activation dropped the accuracy by up to 20%.
 
